@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "yaepy"
+version = "0.1.0"
+description = "Yet Another Editor in Python"
+authors = ["SrvZ"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+textual = {extras = ["syntax"], version = "^0.47.1"}
+prompt-toolkit = "^3.0.43"
+
+[tool.poetry.group.dev.dependencies]
+textual-dev = "^1.4.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
